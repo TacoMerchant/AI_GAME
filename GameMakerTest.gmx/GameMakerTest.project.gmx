@@ -13,9 +13,7 @@
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
-  <objects name="objects">
-    <object>objects\obj_objject1</object>
-  </objects>
+  <objects name="objects"/>
   <help>
     <rtf>help.rtf</rtf>
   </help>
