@@ -15,7 +15,6 @@
   <paths name="paths"/>
   <objects name="objects">
     <object>objects\obj_objject1</object>
-    <object>objects\Object2</object>
   </objects>
   <help>
     <rtf>help.rtf</rtf>
