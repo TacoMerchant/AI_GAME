@@ -26,7 +26,12 @@
           <argument>
             <kind>1</kind>
             <string>// Dennis' comment
+<<<<<<< HEAD
 // hunters comment
+=======
+
+// Julian's comment
+>>>>>>> 187ef9ea616e0f0f8f7f69f0042e6a8a8a680893
 </string>
           </argument>
         </arguments>
