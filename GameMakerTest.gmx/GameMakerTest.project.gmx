@@ -9,6 +9,7 @@
     <sprite>sprites\spr_DHsprite</sprite>
     <sprite>sprites\spr_spriete2</sprite>
     <sprite>sprites\asd</sprite>
+    <sprite>sprites\sprite4</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths"/>
