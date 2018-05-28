@@ -25,17 +25,14 @@
         <arguments>
           <argument>
             <kind>1</kind>
-<<<<<<< HEAD
             <string>// Line 1 - DH
 <<<<<<< HEAD
 // Line 1 - JT
 =======
 // line 2 - HD
 >>>>>>> 79deee432d1a759f11df16dc41483f0f36ed0ce3
-=======
             <string>// Line 1 jhgiu
 // Line 2 ghfhg
->>>>>>> 137fcb00d4762b6efa4b03025aa1a6e3ffa98866
 </string>
           </argument>
         </arguments>
