@@ -6,7 +6,7 @@
   <depth>0</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
-  <maskName>spr_enemy</maskName>
+  <maskName>&lt;undefined&gt;</maskName>
   <events>
     <event eventtype="0" enumb="0">
       <action>
@@ -25,19 +25,11 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>// info   --- Will this overwrite information created with instance_create()?
-var wallCollision = false;
-var beyondBoundary = false;
-
-estimatedDistance = point_distance(x, y, obj_player.x, obj_player.y);
-currentDistance = point_distance(obj_enemy.x, obj_enemy.y, x, y);
-pathLength = currentDistance + estimatedDistance;
-
-if (place_meeting(x, y, obj_wall)) // Correct collision?
-    wallCollision = true;
-    
-if ((x &lt; 0) || (x &gt; (1024 - 16)) || (y &lt; (-768 + 16)) || (y &gt; 0))
-    beyondBoundary = true;    
+            <string>tmc_ll_init();
+tmc_ll_demo_forward_chain_test();
+tmc_ll_demo_backward_chain_test();
+tmc_ll_demo_forward_circular_chain_test();
+tmc_ll_demo_backward_circular_chain_test();
 </string>
           </argument>
         </arguments>

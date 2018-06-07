@@ -66,7 +66,6 @@ if (point_distance(x, y, player_x, player_y) &lt; 200) {
     if (abs(x - start_x) &lt; 2 &amp;&amp; abs(y - start_y) &lt; 2) {
         path_start(path_patrol, 3, path_action_reverse, false);
     }   
-
 }
 </string>
           </argument>

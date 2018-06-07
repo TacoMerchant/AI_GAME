@@ -73,7 +73,9 @@
       <filename>ASearch.h</filename>
     </datafile>
   </datafiles>
-  <NewExtensions/>
+  <NewExtensions>
+    <extension index="0">extensions\TMC Linked List</extension>
+  </NewExtensions>
   <sounds name="sound"/>
   <sprites name="sprites">
     <sprite>sprites\spr_enemy</sprite>
@@ -87,6 +89,43 @@
   <scripts name="scripts">
     <script>scripts\generateChildren.gml</script>
     <script>scripts\aSearch.gml</script>
+    <scripts name="tmc_llinked_list">
+      <script>scripts\tmc_ll_READ_ME.gml</script>
+      <script>scripts\tmc_ll_init.gml</script>
+      <script>scripts\tmc_ll_item.gml</script>
+      <script>scripts\tmc_ll_item_get_data.gml</script>
+      <script>scripts\tmc_ll_item_get_id.gml</script>
+      <script>scripts\tmc_ll_item_set_next.gml</script>
+      <script>scripts\tmc_ll_item_get_next.gml</script>
+      <script>scripts\tmc_ll_item_get_next_id.gml</script>
+      <script>scripts\tmc_ll_item_set_prev.gml</script>
+      <script>scripts\tmc_ll_item_get_prev.gml</script>
+      <script>scripts\tmc_ll_item_get_prev_id.gml</script>
+      <script>scripts\tmc_ll_item_unchain.gml</script>
+      <script>scripts\tmc_ll_item_insert_after.gml</script>
+      <script>scripts\tmc_ll_item_insert_before.gml</script>
+      <script>scripts\tmc_ll_item_equals.gml</script>
+      <script>scripts\tmc_ll_to_array.gml</script>
+      <scripts name="Examples">
+        <scripts name="LoopExamples">
+          <script>scripts\tmc_ll_demo_forward_while_to_end.gml</script>
+          <script>scripts\tmc_ll_demo_safe_forward_while_to_end.gml</script>
+          <script>scripts\tmc_ll_demo_forward_for_to_end.gml</script>
+          <script>scripts\tmc_ll_demo_backward_while_to_start.gml</script>
+          <script>scripts\tmc_ll_demo_backward_for_to_start.gml</script>
+          <script>scripts\tmc_ll_demo_forward_while_circular.gml</script>
+          <script>scripts\tmc_ll_demo_backward_while_circular.gml</script>
+          <script>scripts\tmc_ll_demo_forward_for_circular.gml</script>
+          <script>scripts\tmc_ll_demo_backward_for_circular.gml</script>
+        </scripts>
+        <scripts name="FeatureTests">
+          <script>scripts\tmc_ll_demo_forward_chain_test.gml</script>
+          <script>scripts\tmc_ll_demo_backward_chain_test.gml</script>
+          <script>scripts\tmc_ll_demo_forward_circular_chain_test.gml</script>
+          <script>scripts\tmc_ll_demo_backward_circular_chain_test.gml</script>
+        </scripts>
+      </scripts>
+    </scripts>
   </scripts>
   <objects name="objects">
     <object>objects\obj_enemy</object>

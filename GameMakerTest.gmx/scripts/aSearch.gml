@@ -18,19 +18,25 @@ A* Search (Root_Node, Goal) {
 }// end of A* function.
 */
 closedList = ds_queue_create();
-openList = ds_queue_create();
+openList = ds_priority_create();
 var G = instance_create(obj_enemy.x, obj_enemy.y, class_Node);
 
-ds_queue_enqueue(openList, G);
-while (!ds_queue_empty(openList)) {
-    G = ds_queue_dequeue(openList);
+ds_priority_add(openList, G, G.pathLength);
+while (!ds_priority_empty(openList)) {
+    G = ds_priority_find_min(openList);
+    ds_priority_delete_min(openList);
     ds_queue_enqueue(closedlist, G);
-    if ((G.x == obj_player.x) && (G.y == obj_player.y)); // Change
-        // Return path
+    if ((abs(G.x - obj_player.x) < 2) && (abs(G.y - obj_player.y) < 2));
+        // Retrace path and return first move
     else {
         generateChildren(G);
-        // Sort OpenList by pathLength
+        // Sort OpenList by pathLength ... or use priority queue
     }
 }
+
+// To improve performance, make sure no memory leaks
+ds_queue_destroy(closedList);
+ds_priority_destroy(openList);
+//  and increase distance between jumps for each move
 
 
