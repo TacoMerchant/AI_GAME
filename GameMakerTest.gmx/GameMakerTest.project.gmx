@@ -81,6 +81,8 @@
     <sprite>sprites\spr_enemy</sprite>
     <sprite>sprites\sprite2</sprite>
     <sprite>sprites\spr_player</sprite>
+    <sprite>sprites\spr_play</sprite>
+    <sprite>sprites\spr_arrow</sprite>
   </sprites>
   <backgrounds name="background"/>
   <paths name="paths">
@@ -126,15 +128,26 @@
         </scripts>
       </scripts>
     </scripts>
+    <script>scripts\scr_menu.gml</script>
   </scripts>
+  <fonts name="fonts">
+    <font>fonts\font_play</font>
+  </fonts>
   <objects name="objects">
     <object>objects\obj_enemy</object>
     <object>objects\obj_player</object>
     <object>objects\obj_wall</object>
     <object>objects\class_Node</object>
+    <object>objects\obj_play</object>
+    <object>objects\obj_menu</object>
+    <object>objects\obj_menureturn</object>
+    <object>objects\obj_credits</object>
   </objects>
   <rooms name="rooms">
+    <room>rooms\rm_menu</room>
     <room>rooms\room0</room>
+    <room>rooms\rm_credits</room>
+    <room>rooms\rm_highscore</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
