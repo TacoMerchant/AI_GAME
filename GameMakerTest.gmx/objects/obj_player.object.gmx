@@ -61,6 +61,7 @@ direction = point_direction(0, 0, axis_x, axis_y);
 
 if (axis_x != 0 || axis_y != 0) speed = 5;
 else speed = 0;
+<<<<<<< HEAD
 */
 
 hspeed = walkingSpeed * (keyboard_check(ord('D')) - keyboard_check(ord('A')));
@@ -81,6 +82,9 @@ if !place_free(x+hspeed,y+vspeed)
     if vspeed&lt;0 move_contact_solid(90,-vspeed)
     vspeed=0
 }
+=======
+
+>>>>>>> 9499e2091e2858d09de2c0af8124d194f964f2ef
 
 </string>
           </argument>

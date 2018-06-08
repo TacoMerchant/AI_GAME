@@ -81,6 +81,7 @@
     <sprite>sprites\spr_enemy</sprite>
     <sprite>sprites\sprite2</sprite>
     <sprite>sprites\spr_player</sprite>
+<<<<<<< HEAD
     <sprites name="Camera">
       <sprite>sprites\spr_camera_safe</sprite>
       <sprite>sprites\spr_camera_not_safe</sprite>
@@ -94,6 +95,10 @@
     <sprite>sprites\spr_gameover</sprite>
     <sprite>sprites\spr_Victory</sprite>
     <sprite>sprites\sprite12</sprite>
+=======
+    <sprite>sprites\spr_play</sprite>
+    <sprite>sprites\spr_arrow</sprite>
+>>>>>>> 9499e2091e2858d09de2c0af8124d194f964f2ef
   </sprites>
   <backgrounds name="background">
     <background>background\background0</background>
@@ -141,6 +146,7 @@
         </scripts>
       </scripts>
     </scripts>
+<<<<<<< HEAD
     <scripts name="DH- Search">
       <scripts name="A*Algorithm">
         <script>scripts\newNode.gml</script>
@@ -164,12 +170,19 @@
   </scripts>
   <fonts name="fonts">
     <font>fonts\fDefault</font>
+=======
+    <script>scripts\scr_menu.gml</script>
+  </scripts>
+  <fonts name="fonts">
+    <font>fonts\font_play</font>
+>>>>>>> 9499e2091e2858d09de2c0af8124d194f964f2ef
   </fonts>
   <objects name="objects">
     <object>objects\obj_enemy</object>
     <object>objects\obj_player</object>
     <object>objects\obj_wall</object>
     <object>objects\class_Node</object>
+<<<<<<< HEAD
     <objects name="Camera">
       <object>objects\obj_mobCannon1</object>
       <object>objects\obj_mobCannon2</object>
@@ -197,6 +210,18 @@
     <room>rooms\rm_gameWorld</room>
     <room>rooms\rm_victory</room>
     <room>rooms\rm_dead</room>
+=======
+    <object>objects\obj_play</object>
+    <object>objects\obj_menu</object>
+    <object>objects\obj_menureturn</object>
+    <object>objects\obj_credits</object>
+  </objects>
+  <rooms name="rooms">
+    <room>rooms\rm_menu</room>
+    <room>rooms\room0</room>
+    <room>rooms\rm_credits</room>
+    <room>rooms\rm_highscore</room>
+>>>>>>> 9499e2091e2858d09de2c0af8124d194f964f2ef
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
