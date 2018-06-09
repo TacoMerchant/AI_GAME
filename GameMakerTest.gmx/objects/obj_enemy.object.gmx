@@ -28,7 +28,7 @@
             <string>start_x = x;
 start_y = y;
 
-path_start(path_patrol, 3, path_action_reverse, false);
+//path_start(path_patrol, 3, path_action_reverse, false);
 </string>
           </argument>
         </arguments>
@@ -57,9 +57,11 @@ player_y = obj_player.y;
 if (point_distance(x, y, player_x, player_y) &lt; 200) {
 
     path_end();
-    mp_potential_step_object(player_x, player_y, 3.5, obj_wall);
+    //mp_potential_step_object(player_x, player_y, 3.5, obj_wall);
+    aSearch();
+    //temp();
     
-} else if (path_index != path_patrol) {
+} /*else if (path_index != path_patrol) {
 
     mp_potential_step_object(start_x, start_y, 3, obj_wall);
 
@@ -67,6 +69,7 @@ if (point_distance(x, y, player_x, player_y) &lt; 200) {
         path_start(path_patrol, 3, path_action_reverse, false);
     }   
 }
+*/
 </string>
           </argument>
         </arguments>
