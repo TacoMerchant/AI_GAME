@@ -12,26 +12,153 @@
     <sprite>sprites\spr_enemy</sprite>
     <sprite>sprites\sprite2</sprite>
     <sprite>sprites\spr_player</sprite>
+<<<<<<< HEAD
+    <sprites name="Camera">
+      <sprite>sprites\spr_camera_safe</sprite>
+      <sprite>sprites\spr_camera_not_safe</sprite>
+      <sprite>sprites\spr_red_light</sprite>
+    </sprites>
+    <sprites name="Enemy">
+      <sprite>sprites\spr_ball</sprite>
+    </sprites>
+    <sprite>sprites\spr_character</sprite>
+    <sprite>sprites\spr_monster</sprite>
+    <sprite>sprites\spr_gameover</sprite>
+    <sprite>sprites\spr_Victory</sprite>
+    <sprite>sprites\sprite12</sprite>
+=======
+    <sprite>sprites\spr_play</sprite>
+    <sprite>sprites\spr_arrow</sprite>
+>>>>>>> 9499e2091e2858d09de2c0af8124d194f964f2ef
   </sprites>
-  <backgrounds name="background"/>
+  <backgrounds name="background">
+    <background>background\background0</background>
+  </backgrounds>
   <paths name="paths">
     <path>paths\path_patrol</path>
   </paths>
   <scripts name="scripts">
     <script>scripts\generateChildren.gml</script>
     <script>scripts\aSearch.gml</script>
+<<<<<<< HEAD
     <script>scripts\getFromOpenLists.gml</script>
     <script>scripts\temp.gml</script>
     <script>scripts\bSearch.gml</script>
+=======
+    <scripts name="tmc_llinked_list">
+      <script>scripts\tmc_ll_READ_ME.gml</script>
+      <script>scripts\tmc_ll_init.gml</script>
+      <script>scripts\tmc_ll_item.gml</script>
+      <script>scripts\tmc_ll_item_get_data.gml</script>
+      <script>scripts\tmc_ll_item_get_id.gml</script>
+      <script>scripts\tmc_ll_item_set_next.gml</script>
+      <script>scripts\tmc_ll_item_get_next.gml</script>
+      <script>scripts\tmc_ll_item_get_next_id.gml</script>
+      <script>scripts\tmc_ll_item_set_prev.gml</script>
+      <script>scripts\tmc_ll_item_get_prev.gml</script>
+      <script>scripts\tmc_ll_item_get_prev_id.gml</script>
+      <script>scripts\tmc_ll_item_unchain.gml</script>
+      <script>scripts\tmc_ll_item_insert_after.gml</script>
+      <script>scripts\tmc_ll_item_insert_before.gml</script>
+      <script>scripts\tmc_ll_item_equals.gml</script>
+      <script>scripts\tmc_ll_to_array.gml</script>
+      <scripts name="Examples">
+        <scripts name="LoopExamples">
+          <script>scripts\tmc_ll_demo_forward_while_to_end.gml</script>
+          <script>scripts\tmc_ll_demo_safe_forward_while_to_end.gml</script>
+          <script>scripts\tmc_ll_demo_forward_for_to_end.gml</script>
+          <script>scripts\tmc_ll_demo_backward_while_to_start.gml</script>
+          <script>scripts\tmc_ll_demo_backward_for_to_start.gml</script>
+          <script>scripts\tmc_ll_demo_forward_while_circular.gml</script>
+          <script>scripts\tmc_ll_demo_backward_while_circular.gml</script>
+          <script>scripts\tmc_ll_demo_forward_for_circular.gml</script>
+          <script>scripts\tmc_ll_demo_backward_for_circular.gml</script>
+        </scripts>
+        <scripts name="FeatureTests">
+          <script>scripts\tmc_ll_demo_forward_chain_test.gml</script>
+          <script>scripts\tmc_ll_demo_backward_chain_test.gml</script>
+          <script>scripts\tmc_ll_demo_forward_circular_chain_test.gml</script>
+          <script>scripts\tmc_ll_demo_backward_circular_chain_test.gml</script>
+        </scripts>
+      </scripts>
+    </scripts>
+<<<<<<< HEAD
+    <scripts name="DH- Search">
+      <scripts name="A*Algorithm">
+        <script>scripts\newNode.gml</script>
+        <script>scripts\connectNodes.gml</script>
+        <script>scripts\nodesAreConnected.gml</script>
+        <script>scripts\nodeExists.gml</script>
+        <script>scripts\getNeighbours.gml</script>
+        <script>scripts\disconnectNodes.gml</script>
+        <script>scripts\deleteNode.gml</script>
+        <script>scripts\initializeGraph.gml</script>
+        <script>scripts\getShortestPath.gml</script>
+        <script>scripts\filterPath.gml</script>
+        <script>scripts\getHeuristic.gml</script>
+      </scripts>
+      <scripts name="rm_PathFinding">
+        <script>scripts\getNodeAt.gml</script>
+        <script>scripts\getNodeX.gml</script>
+        <script>scripts\getNodeY.gml</script>
+      </scripts>
+    </scripts>
   </scripts>
+  <fonts name="fonts">
+    <font>fonts\fDefault</font>
+=======
+    <script>scripts\scr_menu.gml</script>
+>>>>>>> 725e9e925158796eb97e1530b9278c83b41a339e
+  </scripts>
+  <fonts name="fonts">
+    <font>fonts\font_play</font>
+>>>>>>> 9499e2091e2858d09de2c0af8124d194f964f2ef
+  </fonts>
   <objects name="objects">
     <object>objects\obj_enemy</object>
     <object>objects\obj_player</object>
     <object>objects\obj_wall</object>
     <object>objects\class_Node</object>
+<<<<<<< HEAD
+    <objects name="Camera">
+      <object>objects\obj_mobCannon1</object>
+      <object>objects\obj_mobCannon2</object>
+      <object>objects\obj_mobCannon3</object>
+      <object>objects\obj_mobCannon4</object>
+      <object>objects\obj_mobCannon5</object>
+      <object>objects\obj_mobCannon6</object>
+      <object>objects\obj_light</object>
+    </objects>
+    <objects name="rm_PathFinding">
+      <object>objects\objMap</object>
+      <object>objects\objDebug</object>
+      <object>objects\objBall</object>
+    </objects>
+    <object>objects\obj_finsh</object>
+    <objects name="menu">
+      <object>objects\obj_gameover</object>
+      <object>objects\obj_victory</object>
+      <object>objects\obj_menu</object>
+    </objects>
   </objects>
   <rooms name="rooms">
+    <room>rooms\rm_main</room>
     <room>rooms\room0</room>
+    <room>rooms\rm_gameWorld</room>
+    <room>rooms\rm_victory</room>
+    <room>rooms\rm_dead</room>
+=======
+    <object>objects\obj_play</object>
+    <object>objects\obj_menu</object>
+    <object>objects\obj_menureturn</object>
+    <object>objects\obj_credits</object>
+  </objects>
+  <rooms name="rooms">
+    <room>rooms\rm_menu</room>
+    <room>rooms\room0</room>
+    <room>rooms\rm_credits</room>
+    <room>rooms\rm_highscore</room>
+>>>>>>> 9499e2091e2858d09de2c0af8124d194f964f2ef
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
